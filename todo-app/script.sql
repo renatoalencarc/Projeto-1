@@ -1,0 +1,9 @@
+CREATE DATABASE testdb;
+
+\c todolist;
+
+CREATE TABLE todo (
+    id SERIAL PRIMARY KEY,
+    descr VARCHAR(255) NOT NULL,
+    done BOOLEAN DEFAULT FALSE
+);
