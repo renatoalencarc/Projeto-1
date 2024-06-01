@@ -7,16 +7,19 @@ const cors = require('cors');
 //Creating an express app
 const app = express();
 const pool = new Pool({
+
+  //Change your credentials here
   user: 'postgres',
   host: 'localhost',
-  database: 'tododb',
-  password: 'admin',
+  database: 'todolist',
+  password: 'maicao123',
   port: 5432,
 });
 
 app.use(cors());
 app.use(express.json());
 
+//The .get path is the same name as the table in the database
 app.get('/todos', async (req, res) => {
   const result = await pool.query('SELECT * FROM todos ORDER BY id');
   res.json(result.rows);

@@ -34,9 +34,9 @@
 
 
 
-<div class="mb-4 flex flex-row justify-between">
+<div class="mb-4 flex flex-row justify-between items-center">
     <div class="flex flex-row justify-start">
-        <h1 class="text-2xl font-bold mb-4">Todo List</h1>
+        <h1 class="text-5xl font-bold mb-4">Todo List</h1>
     </div>
     <div class="flex flex-row
     ">
@@ -84,6 +84,8 @@
         </li>
     {/each}
 </ul>
+<div class="flex items-center justify-center"><p>Come on! Start your first task!</p></div>
+
 
 <style>
     .line-through {
