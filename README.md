@@ -1,4 +1,4 @@
-# This repository is just a simple ToDo App made with Svelte, tailwind and postgres database. Feel free to modify and use as template
+# Simple ToDo App
 
 Technologies used:
 
